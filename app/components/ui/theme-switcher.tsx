@@ -4,12 +4,17 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 export const ThemeSwitcher = () => {
-  const { setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   return (
-    <button className="flex gap-6">
-      <Moon onClick={() => setTheme("light")} />
-      <Sun onClick={() => setTheme("dark")} />
-    </button>
+    <div className=" flex gap-6">
+      <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+        {theme === "light" ? (
+          <Sun onClick={() => setTheme("dark")} className="" />
+        ) : (
+          <Moon onClick={() => setTheme("light")} className="" />
+        )}
+      </button>
+    </div>
   );
 };
