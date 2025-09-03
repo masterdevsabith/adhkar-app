@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="adhkar_page"
-      className="w-full h-full flex flex-col items-center justify-center "
+      className="w-full h-full flex flex-col items-center justify-center"
     >
       <h2 className="mb-6 text-2xl font-semibold">Time For Morning Adhkar</h2>
       <div className="adhkar_box mb-3 p-5 bg-[#2c2c2c] w-100 h-100 rounded-2xl flex flex-col items-center justify-center gap-3">
